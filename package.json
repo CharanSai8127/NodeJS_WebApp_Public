@@ -1,10 +1,17 @@
 {
+  "name": "basic-nodejs",
+  "version": "1.0.0",
+  "main": "app.js",
+  "description": "NodeJS Project with Express Framework and Running in Docker Container",
+  "author": "Aditya",
+  "license": "MIT",
   "dependencies": {
-    "express": "*"
+    "express": "*",
+    "mysql": "^2.18.1"
   },
-  "name": "continuous-test-code-coverage-guide",
+  "devDependencies": {},
   "scripts": {
-    "start": "webpack",
+    "start": "node app.js",
     "test": "jest --coverage --coverageDirectory=output/coverage/jest"
   },
   "jest": {
@@ -19,15 +26,5 @@
   "jest-junit": {
     "output": "output/coverage/junit/junit.xml",
     "usePathForSuiteName": "true"
-  },
-  "scripts": {
-    "start": "node app.js"
-  },
-  "name": "basic-nodejs",
-  "version": "1.0.0",
-  "main": "app.js",
-  "devDependencies": {},
-  "author": "Aditya",
-  "license": "MIT",
-  "description": "NodeJS Project with Expres FrameWork and Running in Docker Container"
+  }
 }
